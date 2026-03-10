@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "yawmod",
+  "version": "${version}",
+  "name": "Anti Aim Mod",
+  "description": "A simple Anti Aim module for Meteor Client.",
+  "authors": [
+    "xardacc"
+  ],
+  "contact": {
+    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
+  },
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.xardacc.yawmod.YawAddon"
+    ]
+  },
+  "custom": {
+    "meteor-client:color": "225,25,25",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}
